@@ -18,6 +18,7 @@
         "underscore" : "1.6.0",
         "nodemailer": "0.6.5",
         "cron": "1.0.4",
+        "bugsnag": "1.6.4",
         "sso": "git+ssh://git@github.com/kitemao/wdj_sso_node.git"
     },
     "devDependencies" : {

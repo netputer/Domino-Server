@@ -18,6 +18,9 @@
  * `node app.js --silent --port=80 --prod`
  */
 
+var bugsnag = require('bugsnag');
+bugsnag.register("5838bf625325c8389b2f6614a82c9bfe");
+
 // Ensure a "sails" can be located:
 var sails;
 try {

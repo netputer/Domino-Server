@@ -3,7 +3,7 @@ var StatusCode = require('../../utils/StatusCodeMapping');
 var Msg        = require('../../utils/MsgMapping');
 
 module.exports = {
-    auth: function  (req, res) {
+    auth: function (req, res) {
         var user = req.session.user;
 
         if (!user) {
@@ -21,7 +21,7 @@ module.exports = {
         // 处理用户的权限
         var userAuth = {};
         _.each(authCfg, function (auth, authKey) {
-            auth = _.isArray(auth) ?  auth : auth[process.env.NODE_ENV];
+            auth = _.isArray(auth) ? auth : auth[process.env.NODE_ENV];
 
             if (_.contains(auth, accountName)) {
                 userAuth[authKey] = true;
@@ -42,12 +42,11 @@ module.exports = {
             accountName: accountName,
             displayName: displayName
         });
-
     },
 
     find: function (req, res) {
-        console.log('account.find');
         var name = req.param.accountName;
+
         if (name) {
             if (name === req.session.accountName) {
                 User.findOne({ accountName: name }).then(function (userData) {
@@ -59,8 +58,7 @@ module.exports = {
                     // todo: no user
                 });
             }
-        }
-        else {
+        } else {
             User.find().then(function (userDatas) {
                 if (userDatas) {
                     res.send({
