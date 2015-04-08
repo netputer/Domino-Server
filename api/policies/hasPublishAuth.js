@@ -9,24 +9,20 @@ var permission = require('../../permission/publish');
 var msgMapping = require('../../utils/MsgMapping');
 
 module.exports = function (req, res, next) {
-
     var env         = process.env.NODE_ENV || 'development';
     var accountName = req.session.accountName;
 
     var list        = permission[env];
 
     if (process.env.NODE_ENV === 'test') {
-
         return next();
     }
-
 
     if (list && _.contains(list, accountName)) {
 
         console.log('list succ:', accountName);
         return next();
-    }
-    else {
+    } else {
         console.log('list error:', accountName);
         res.send({
             msg: msgMapping.NO_PUBLISH_AUTH

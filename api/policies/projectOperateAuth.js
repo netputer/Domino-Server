@@ -16,8 +16,7 @@ module.exports = function (req, res, next) {
     if (superList && _.contains(superList, accountName)) {
 
         return next();
-    }
-    else {
+    } else {
         var projectTitle = req.params.projectTitle;
 
         Project.findOne({

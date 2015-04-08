@@ -34,7 +34,6 @@ function updateBuildScirpt(data) {
 }
 
 module.exports = function (options) {
-
     var deferred = Q.defer();
 
     var title        = options.title;
@@ -55,7 +54,6 @@ module.exports = function (options) {
                 project.version = branch;
 
                 updateBuildScirpt(project).then(function () {
-                    console.log(32323);
                     hook.run({
                         branch: branch,
                         accountName: operator
@@ -67,9 +65,7 @@ module.exports = function (options) {
                 console.log(err);
                 deferred.reject();
             });
-        }
-        else {
-
+        } else {
             deferred.reject();
         }
     }, function (err) {
