@@ -5,12 +5,12 @@
 module.exports = {
 
     development: [
-        'miaojian',
+        'hantianqi',
         'wangye.zhao'
     ],
 
     production: [
-        'miaojian',
+        'hantianqi',
         'wangye.zhao',
         'lixiaomeng',
         'hanjiyun',
@@ -23,6 +23,7 @@ module.exports = {
         'netputer',
         'zhengwenjie',
         'ningxiaobei',
-        'sunbeiji'
+        'sunbeiji',
+        'shuixiong'
     ]
 };
