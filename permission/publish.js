@@ -5,25 +5,16 @@
 module.exports = {
 
     development: [
-        'hantianqi',
         'wangye.zhao'
     ],
 
     production: [
-        'hantianqi',
         'wangye.zhao',
-        'lixiaomeng',
         'hanjiyun',
-        'wangxiao',
-        'gaohailang',
-        'leplay',
-        'lixiaopeng',
         'zhailin',
-        'zhangyaochun',
         'netputer',
         'zhengwenjie',
-        'ningxiaobei',
         'sunbeiji',
-        'shuixiong'
+        'zhangning01'
     ]
 };
