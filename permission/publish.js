@@ -15,6 +15,7 @@ module.exports = {
         'netputer',
         'zhengwenjie',
         'sunbeiji',
-        'zhangning01'
+        'zhangning01',
+        'lixiang'
     ]
 };
