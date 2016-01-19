@@ -16,6 +16,7 @@ module.exports = {
         'zhengwenjie',
         'sunbeiji',
         'zhangning01',
-        'lixiang'
+        'lixiang',
+        'hawstein'
     ]
 };
