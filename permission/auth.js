@@ -5,6 +5,7 @@ module.exports = {
 
     // 超级权限
     super: [
-        'wangye.zhao'
+        'wangye.zhao',
+        'netputer'
     ]
 };

@@ -10,13 +10,12 @@ module.exports = {
 
     production: [
         'wangye.zhao',
-        'hanjiyun',
         'zhailin',
         'netputer',
         'zhengwenjie',
         'sunbeiji',
         'zhangning01',
-        'lixiang',
-        'hawstein'
+        'hawstein',
+        'weiqiyiji'
     ]
 };
